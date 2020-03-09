@@ -1,0 +1,702 @@
+{
+    "findfile": {
+        "help": "搜寻文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "finddir": {
+        "help": "搜寻文件夹",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "copyfile": {
+        "help": "复制文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-n",
+                "must": true,
+                "otherMust": true,
+                "help": "复制目标文件夹"
+            },
+            {
+                "name": "-p",
+                "must": false,
+                "otherMust": false,
+                "help": "是否保持源文件的路径结构"
+            },
+            {
+                "name": "-o",
+                "must": false,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "copydir": {
+        "help": "复制文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-n",
+                "must": true,
+                "otherMust": true,
+                "help": "复制目标文件夹"
+            },
+            {
+                "name": "-p",
+                "must": false,
+                "otherMust": false,
+                "help": "是否保持源文件的路径结构"
+            },
+            {
+                "name": "-o",
+                "must": false,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "removefile": {
+        "help": "转移文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-n",
+                "must": true,
+                "otherMust": true,
+                "help": "转移目标文件夹"
+            },
+            {
+                "name": "-p",
+                "must": false,
+                "otherMust": false,
+                "help": "是否保持源文件的路径结构"
+            },
+            {
+                "name": "-o",
+                "must": false,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "removedir": {
+        "help": "转移文件夹",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-n",
+                "must": true,
+                "otherMust": true,
+                "help": "转移目标文件夹"
+            },
+            {
+                "name": "-p",
+                "must": false,
+                "otherMust": false,
+                "help": "是否保持源文件的路径结构"
+            },
+            {
+                "name": "-o",
+                "must": false,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "deletefile": {
+        "help": "删除文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "deletedir": {
+        "help": "删除文件夹",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "renamefile": {
+        "help": "文件改名",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-o",
+                "must": true,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "renamedir": {
+        "help": "删除文件夹",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-o",
+                "must": true,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "exchangefile": {
+        "help": "文件交换",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索源路径"
+            },
+            {
+                "name": "-r",
+                "must": true,
+                "otherMust": true,
+                "help": "搜索正则"
+            },
+            {
+                "name": "-s",
+                "must": false,
+                "otherMust": false,
+                "help": "是否包括子文件夹"
+            },
+            {
+                "name": "-t",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在搜索是实时显示信息"
+            },
+            {
+                "name": "-l",
+                "must": false,
+                "otherMust": false,
+                "help": "是否在创建日志文件"
+            },
+            {
+                "name": "-n",
+                "must": true,
+                "otherMust": true,
+                "help": "目标文件"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "namerule": {
+        "help": "文件改名命令测试",
+        "rule": [
+            {
+                "name": "-o",
+                "must": true,
+                "otherMust": true,
+                "help":"改名命令 具体如下:\n\t1.<old:?:?:?>原名切片操作\n\t2.<oldr:?:?:...>原名正则匹配\n\t3.<new:...>添加新名字\n\t4.<time:%Y_%m_%d_%H_%M_%S>添加日期\n\t5.<add:?:?>添加自增"
+            },
+            {
+                "name": "-a",
+                "must": false,
+                "otherMust": false,
+                "help": "改名附属是否在用户没有添加<add::>时自动末尾添加自增<add::>"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "help": {
+        "help": "帮助",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "breaklog": {
+        "help": "回退",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "日志的保存路径"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "looklog": {
+        "help": "查看日志文件",
+        "rule": [
+            {
+                "name": "-f",
+                "must": true,
+                "otherMust": true,
+                "help": "日志的保存路径"
+            },
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "list": {
+        "help": "查看命令列表",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "version": {
+        "help": "查看版本号",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "helpall": {
+        "help": "查看全部命令帮助",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "tip": {
+        "help": "提示信息",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    },
+    "exit": {
+        "help": "退出程序",
+        "rule": [
+            {
+                "name": "-?",
+                "must": false,
+                "otherMust": false,
+                "help": "命令解释"
+            }
+        ]
+    }
+}
