@@ -1,7 +1,7 @@
 '''
 @Author: xiaohuohu
 @Date: 2020-03-03 14:04:48
-@LastEditTime: 2020-03-09 11:14:36
+@LastEditTime: 2020-03-09 15:51:26
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \CodeAll\code_Python\批量文件操作\批量操作5.0\FileOS5.0.py
@@ -38,7 +38,7 @@ class FileOS5:
             return
         # 程序本体 =========================================================================
         print(
-            '>>>>>>>>>>>>>>>文件批量操作4.0 BY xiaohuohu TIME 2020-03-01 PS 区分大小写<<<<<<<<<<<<<<<')
+            '>>>>>>>>>>>>>>>文件批量操作4.0 BY xiaohuohu TIME 2020-03-01 PS 区分大小写<<<<<<<<<<<<<<<'.format(FileOS5.version))
         print(FileOS5.tip)
         while True:
             userInput = input('>>>').strip()
