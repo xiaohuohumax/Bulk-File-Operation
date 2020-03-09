@@ -59,11 +59,17 @@
 #### 操作:
 
 + 输入操作指令
+
     ![操作测试](./images/renametest.png)
+
 + 确认操作(供反悔使用)
+
     ![操作确认](./images/testcheck.png)
+
 + 执行完成
+
     ![执行完成](./images/renameover.png)
+
 
 ### 示例 2
 #### 要求: 将 `G:\image` 下所有图片(包括子文件夹)改名并转移到 `G:\newimage` 下
@@ -77,9 +83,11 @@
 ### 文件回退
 
 每次执行时添加 `-l` (小写 L) 即可添加日志
+
 ![日志](./images/logfind.png)
 
 在最后会生成一个 `操作名+日期.json` 文件
+
 ![日志](./images/log.png)
 
 回退时 执行 `breaklog -f g:/renamefile202003092312.json` 即可回退
